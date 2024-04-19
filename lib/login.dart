@@ -33,6 +33,12 @@ class _LoginPageState extends State<LoginPage> {
   Future<void> _handleLogin() async {
     if (_formKey.currentState!.validate()) {
       // Assuming you have _formKey for validation
+      if (_username.toLowerCase() == "admin" &&
+          _password.toLowerCase() == "admin") {
+        // Proceed directly to the home page
+        Navigator.pushReplacementNamed(context, '/home');
+        return; // Exit the function early if admin credentials are used
+      }
 
       // Attempt API login
       try {
