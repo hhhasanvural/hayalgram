@@ -1,0 +1,45 @@
+name: hayalgram
+description: "hayalgram social media app"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.6
+
+  # State Management (Choose one and add it below):
+  provider: ^6.0.4 # Or another state management library
+
+  # Networking
+  http: ^1.2.1
+
+  # Image Related
+  image_picker: ^1.0.7
+  cached_network_image: ^3.3.1
+
+  # Video
+  video_player: ^2.4.8
+  flutter_secure_storage: ^9.0.0
+
+  # Firebase (Add if using)
+  # firebase_core: ^2.3.0
+  # cloud_firestore: ^4.3.0
+  # firebase_auth: ^4.2.2
+  # firebase_storage: ^11.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
